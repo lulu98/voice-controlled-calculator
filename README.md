@@ -18,7 +18,7 @@ As soon as the expression is in postfix notation, we can evaluate the expression
   
 **Add Speech Recognition**  
   
-To make the calculator work, I used the Speech Recognition library of Microsoft. Now you have to identify how numbers are spoken out in your language. I decided on using the English language because the numbers are at least spoken out in order (e.g. 32 - "thirty two" vs "Zwei und Dreißig"). This part actually has cost a lot of tweeking to achieve constant updating of the number in the display port when speaking out part of the whole number. Because you will not be able to store every number in RAM or a data type, you must put the different parts of a whole number smartly together to get the whole number.
+To make the calculator work, I used the Speech Recognition library of Microsoft. Now you have to identify how numbers are spoken out in your language. I decided on using the English language because the numbers are at least spoken out in order (e.g. 32 - "thirty two" vs "Zwei und Dreißig"). This part actually has cost a lot of tweeking to achieve constant updating of the number in the display port when speaking out part of the whole number. Because you will not be able to store every number in RAM or a data type, you must put the different parts of a whole number smartly together to get the whole number. If you build your grammar with too many words, Speech Recognition will get way too slow.
 ## Summary
 The following steps must be followed:  
 1. Transform mathematical expression from infix to postfix
