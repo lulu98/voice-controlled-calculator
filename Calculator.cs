@@ -342,11 +342,18 @@ namespace VoiceControlledCalculator
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-            headingLabel.Focus();
-            double result = 0;
-            List<string> postfixString = InfixToPostfix(inputBox.Text);
-            result = EvaluatePostfix(postfixString);
-            resultBox.Text = result.ToString();
+            if (inputBox.Text == "")
+            {
+                resultBox.Text = "0";
+            }
+            else
+            {
+                headingLabel.Focus();
+                double result = 0;
+                List<string> postfixString = InfixToPostfix(inputBox.Text);
+                result = EvaluatePostfix(postfixString);
+                resultBox.Text = result.ToString();
+            }
         }
 
         #endregion
