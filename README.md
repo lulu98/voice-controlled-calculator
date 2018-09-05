@@ -12,4 +12,5 @@ The following steps must be followed:
 1. Transform mathematical expression from infix to postfix
 2. Evaluate postfix expression  
 3. Add speaking rules  
+
 This application can be extended with more features like calculating the root or exponents. But you would need to change the function that calculates infix to postfix.
