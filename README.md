@@ -4,7 +4,7 @@ This calculator can be controlled like a normal calculator or by using your voic
   
 ![alt text](https://github.com/lulu98/voice-controlled-calculator/blob/master/thumbnail.PNG)
 ## Theory
-To make a calculator work with my voice, I first had to create a normal calculator.  
+To make a calculator work with my voice, I first had to create a normal calculator. The third was adding the Speech Recognition to it.  
   
 **Infix to Postfix**  
   
