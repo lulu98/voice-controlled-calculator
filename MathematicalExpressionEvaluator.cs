@@ -17,8 +17,16 @@ namespace VoiceControlledCalculator
             else
             {
                 double result = 0;
-                List<string> postfixString = InfixToPostfix(infixString);
-                result = EvaluatePostfix(postfixString);
+                try
+                {
+                    List<string> postfixString = InfixToPostfix(infixString);
+                    result = EvaluatePostfix(postfixString);
+                }
+                catch (InvalidOperationException e)
+                {
+                    System.Diagnostics.Debug.WriteLine(e.Message);
+                    System.Diagnostics.Debug.WriteLine("Not valid mathematical expression");
+                }
                 return result;
             }
         }
@@ -199,5 +207,13 @@ namespace VoiceControlledCalculator
             return parsedInputString;
         }
 
+    }
+
+    public class StackEmptyException : Exception
+    {
+        public StackEmptyException()
+        {
+            
+        }
     }
 }
