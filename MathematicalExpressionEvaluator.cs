@@ -208,12 +208,4 @@ namespace VoiceControlledCalculator
         }
 
     }
-
-    public class StackEmptyException : Exception
-    {
-        public StackEmptyException()
-        {
-            
-        }
-    }
 }
