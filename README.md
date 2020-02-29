@@ -1,5 +1,5 @@
 # Voice Controlled Calculator
-Demonstration video: https://www.youtube.com/watch?v=0CiOxTlX6mY&t=62s
+Demonstration video: https://music-transcription-software.000webhostapp.com/projects/voice_controlled_calculator.html
 ## Introduction
 This calculator can be controlled like a normal calculator or by using your voice.  
   
